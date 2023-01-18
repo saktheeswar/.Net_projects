@@ -1,0 +1,27 @@
+﻿@model  Student_Registration.Models.Domain.STUDENT
+
+<form method="post" action="Add" class="m-8">
+    <div class="p-2 mb-1 bg-dark text-white"><h1> Student Portal</h1></div>
+    
+    <div class="mb-3">
+        <label for="" class="form-label">NAME OF THE STUDENT</label>
+        <input type="text" class="form-control" asp-for="NAME">
+        <span asp-validation-for="NAME" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">PLACE</label>
+        <input type="text" class="form-control" asp-for="PLACE">
+        <span asp-validation-for="PLACE" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">DEPARTMENT</label>
+        <input type="text" class="form-control" asp-for="DEPARTMENT">
+        <span asp-validation-for="DEPARTMENT" class="text-danger"></span>
+
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+

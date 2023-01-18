@@ -1,0 +1,43 @@
+﻿@model List<Student_Registration.Models.Domain.STUDENT>
+@{
+}
+<h1>VIEW DETAILS </h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PLACE</th>
+                <th>DEPARTMENT</th>
+                <th>UPDATE</th>
+                <button onclick="window.print()" style="margin-left">Print this page</button>
+                <div>
+                    <br >
+                </div>
+                
+
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var STUDENT in Model)
+            {
+            <tr>
+                <td>@STUDENT.ID</td>
+                <td>@STUDENT.NAME</td>
+                <td>@STUDENT.PLACE</td>
+                <td>@STUDENT.DEPARTMENT</td>
+                <td> <a href ="/contro/view/@STUDENT.ID">view</a></td>
+               
+                
+              
+
+
+            </tr>
+            }
+
+            
+        </tbody>
+    </table>
